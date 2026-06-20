@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT Summer League 2026</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <h1 class="main-title">
+                Turing Truncheons
+            </h1>
+
+            <p class="subtitle">
+                Akal Tech Society
+            </p>
+
+            <h2 class="league-title">
+                Summer League 2026
+            </h2>
+
+            <p class="tagline">
+                May your efforts be light, your success take flight,
+                and your points rise high — Wingardium Leviosa! 🪄
+            </p>
+
+        </header>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <!-- <section class="dashboard">
+
+            <div class="card">
+
+                <div class="card-icon">🏆</div>
+
+                <div class="card-title">
+                    League Leader
+                </div>
+
+                <div class="card-value" id="leaderClub">
+                    Loading...
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">🏅</div>
+
+                <div class="card-title">
+                    Total Clubs
+                </div>
+
+                <div class="card-value" id="totalClubs">
+                    0
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">📅</div>
+
+                <div class="card-title">
+                    Current Week
+                </div>
+
+                <div class="card-value">
+                    Week 1
+                </div>
+
+            </div>
+
+        </section> -->
+
+        <!-- ================= NAVIGATION ================= -->
+
+        <section class="navigation">
+
+            <button class="tab active" id="overallBtn">
+                Overall
+            </button>
+
+            <button class="tab" id="week1Btn">
+                Week 1
+            </button>
+
+        </section>
+
+        <!-- ================= TABLE SECTION ================= -->
+
+        <section class="leaderboard-section">
+
+            <div class="section-heading">
+                <h3>Overall Standings</h3>
+            </div>
+
+            <div class="table-container">
+
+                <table class="leaderboard">
+
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Club</th>
+                            <th>Week1</th>
+                            <!-- <th>Week2</th> -->
+                            <th>Grand Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+                        <!-- Data will come from Google Sheets -->
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section id="week1Content" class="week-notice">
+
+            <h2>Week 1 Standings</h2>
+
+            <p>
+                will be updated on
+                <strong>29/06/2026 (Monday)</strong>.
+            </p>
+
+            <br>
+
+            <h3>Evaluation Criteria (100 Points)</h3>
+
+            <ul>
+
+                <li>
+                    <strong>Consistency (20)</strong><br>
+                    Regular participation and sustained effort throughout the week.
+                </li>
+
+                <li>
+                    <strong>Activity Execution (25)</strong><br>
+                    Planning and successful completion of meaningful club activities such as workshops, competitions,
+                    challenges, quizzes, campaigns, discussions, online technical sessions, or community initiatives.
+                </li>
+
+                <li>
+                    <strong>Teamwork (15)</strong><br>
+                    Collaboration among members, contribution sharing, and collective effort towards club goals.
+                </li>
+
+                <li>
+                    <strong>Innovation (15)</strong><br>
+                    Creativity, originality, and the introduction of fresh ideas or unique approaches.
+                </li>
+
+                <li>
+                    <strong>Participation Rate (15)</strong><br>
+                    Level of member involvement and engagement in the week's activities.
+                </li>
+
+                <li>
+                    <strong>LinkedIn Visibility (10)</strong><br>
+                    Professional promotion of club activities through LinkedIn posts, achievements, and updates.
+                </li>
+
+            </ul>
+
+            <h3>Bonus Points</h3>
+
+            <ul>
+
+                <li>
+                    <strong>Viral Content</strong> – Content that achieves exceptional reach or engagement.
+                </li>
+
+                <li>
+                    <strong>Exceptional Work</strong> – Outstanding performance beyond regular expectations.
+                </li>
+
+                <li>
+                    <strong>Inter-Club Collaboration</strong> – Meaningful collaboration between two or more clubs.
+                </li>
+
+                <li>
+                    <strong>Special Achievement</strong> – Recognition, milestone, or notable accomplishment during the
+                    week.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <p>
+                Turing Truncheons Summer League 2026
+            </p>
+
+            <p class="quote">
+                "Talent wins games, but consistency wins championships."
+            </p>
+
+        </footer>
+
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
