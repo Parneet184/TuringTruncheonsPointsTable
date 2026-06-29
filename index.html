@@ -2,23 +2,25 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TT Summer League 2026</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <!-- ================= HEADER ================= -->
+        <!-- HEADER -->
 
         <header class="header">
 
@@ -41,19 +43,31 @@
 
         </header>
 
-        <!-- ================= DASHBOARD ================= -->
+        <!-- DASHBOARD -->
 
-        <!-- <section class="dashboard">
+        <section class="dashboard">
 
             <div class="card">
 
-                <div class="card-icon">🏆</div>
+                <div class="card-header">
 
-                <div class="card-title">
-                    League Leader
+                    <div class="card-icon">🏆</div>
+
+                    <div>
+
+                        <div class="card-title">
+                            League Leader
+                        </div>
+
+                        <div class="card-subtitle">
+                            Highest Overall Score
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card-value" id="leaderClub">
+                <div class="card-value" id="leagueLeader">
                     Loading...
                 </div>
 
@@ -61,54 +75,90 @@
 
             <div class="card">
 
-                <div class="card-icon">🏅</div>
+                <div class="card-header">
 
-                <div class="card-title">
-                    Total Clubs
+                    <div class="card-icon">💡</div>
+
+                    <div>
+
+                        <div class="card-title">
+                            Innovation Champion
+                        </div>
+
+                        <div class="card-subtitle">
+                            Most Creative Club
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card-value" id="totalClubs">
-                    0
+                <div class="card-value" id="innovationChampion">
+                    Loading...
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="card-icon">📅</div>
+                <div class="card-header">
 
-                <div class="card-title">
-                    Current Week
+                    <div class="card-icon">🤝</div>
+
+                    <div>
+
+                        <div class="card-title">
+                            Participation Champion
+                        </div>
+
+                        <div class="card-subtitle">
+                            Most Engaged Community
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card-value">
-                    Week 1
+                <div class="card-value" id="participationChampion">
+                    Loading...
                 </div>
 
             </div>
 
-        </section> -->
+        </section>
 
-        <!-- ================= NAVIGATION ================= -->
+        <!-- NAVIGATION -->
 
         <section class="navigation">
 
-            <button class="tab active" id="overallBtn">
+            <button
+                class="tab active"
+                id="overallBtn">
+
                 Overall
+
             </button>
 
-            <button class="tab" id="week1Btn">
+            <button
+                class="tab"
+                id="week1Btn">
+
                 Week 1
+
             </button>
 
         </section>
 
-        <!-- ================= TABLE SECTION ================= -->
+        <!-- OVERALL LEADERBOARD -->
 
         <section class="leaderboard-section">
 
             <div class="section-heading">
-                <h3>Overall Standings</h3>
+
+                <h3>
+                    Overall Standings
+                </h3>
+
             </div>
 
             <div class="table-container">
@@ -116,17 +166,18 @@
                 <table class="leaderboard">
 
                     <thead>
+
                         <tr>
                             <th>Rank</th>
                             <th>Club</th>
-                            <th>Week1</th>
-                            <!-- <th>Week2</th> -->
+                            <th>Week 1</th>
                             <th>Grand Total</th>
                         </tr>
+
                     </thead>
 
                     <tbody id="tableBody">
-                        <!-- Data will come from Google Sheets -->
+
                     </tbody>
 
                 </table>
@@ -135,81 +186,47 @@
 
         </section>
 
+        <!-- WEEK 1 LEADERBOARD -->
 
-        <section id="week1Content" class="week-notice">
+        <section
+            id="week1Content"
+            style="display:none;">
 
-            <h2>Week 1 Standings</h2>
+            <div class="section-heading">
 
-            <p>
-                will be updated on
-                <strong>29/06/2026 (Monday)</strong>.
-            </p>
+                <h3>
+                    Week 1 Standings
+                </h3>
 
-            <br>
+            </div>
 
-            <h3>Evaluation Criteria (100 Points)</h3>
+            <div class="table-container">
 
-            <ul>
+                <table class="leaderboard">
 
-                <li>
-                    <strong>Consistency (20)</strong><br>
-                    Regular participation and sustained effort throughout the week.
-                </li>
+                    <thead>
 
-                <li>
-                    <strong>Activity Execution (25)</strong><br>
-                    Planning and successful completion of meaningful club activities such as workshops, competitions,
-                    challenges, quizzes, campaigns, discussions, online technical sessions, or community initiatives.
-                </li>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Club</th>
+                            <th>Base Score</th>
+                            <th>Bonus</th>
+                            <th>Total</th>
+                        </tr>
 
-                <li>
-                    <strong>Teamwork (15)</strong><br>
-                    Collaboration among members, contribution sharing, and collective effort towards club goals.
-                </li>
+                    </thead>
 
-                <li>
-                    <strong>Innovation (15)</strong><br>
-                    Creativity, originality, and the introduction of fresh ideas or unique approaches.
-                </li>
+                    <tbody id="week1TableBody">
 
-                <li>
-                    <strong>Participation Rate (15)</strong><br>
-                    Level of member involvement and engagement in the week's activities.
-                </li>
+                    </tbody>
 
-                <li>
-                    <strong>LinkedIn Visibility (10)</strong><br>
-                    Professional promotion of club activities through LinkedIn posts, achievements, and updates.
-                </li>
+                </table>
 
-            </ul>
-
-            <h3>Bonus Points</h3>
-
-            <ul>
-
-                <li>
-                    <strong>Viral Content</strong> – Content that achieves exceptional reach or engagement.
-                </li>
-
-                <li>
-                    <strong>Exceptional Work</strong> – Outstanding performance beyond regular expectations.
-                </li>
-
-                <li>
-                    <strong>Inter-Club Collaboration</strong> – Meaningful collaboration between two or more clubs.
-                </li>
-
-                <li>
-                    <strong>Special Achievement</strong> – Recognition, milestone, or notable accomplishment during the
-                    week.
-                </li>
-
-            </ul>
+            </div>
 
         </section>
 
-        <!-- ================= FOOTER ================= -->
+        <!-- FOOTER -->
 
         <footer class="footer">
 
@@ -224,8 +241,6 @@
         </footer>
 
     </div>
-
-    <!-- ================= JAVASCRIPT ================= -->
 
     <script src="js/script.js"></script>
 
